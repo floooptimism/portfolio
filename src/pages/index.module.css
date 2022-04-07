@@ -1,0 +1,32 @@
+.Hero {
+  @apply mt-40 flex items-center justify-center flex-col;
+  @apply text-white;
+  @apply space-y-2 md:space-y-3;
+}
+
+.HeroButtonContainer {
+  @apply pt-8
+}
+
+.HeroButtonContainer button {
+  @apply flex justify-center items-center space-x-2;
+  @apply px-3 py-1 rounded;
+  @apply text-lg text-black;
+  background-color: var(--secondary-color);
+}
+
+.SectionContainer{
+  @apply w-72 md:w-80 px-6 md:px-0;
+  @apply mx-auto;
+}
+
+.SectionName{
+  @apply inline-block;
+  @apply text-white font-bold text-xl;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.SectionContent{
+  @apply flex flex-wrap;
+  @apply mt-4;
+}
