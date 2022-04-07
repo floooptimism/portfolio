@@ -80,7 +80,7 @@ function Index() {
 
       </footer>
 
-      <ReactTooltip clickable/>
+      <ReactTooltip backgroundColor="black" textColor="white" clickable/>
     </div>
   );
 }
