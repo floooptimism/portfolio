@@ -70,12 +70,6 @@ function Index() {
           <div className="text-gray-400 text-sm space-y-2 underline flex flex-col">
 
             <div className={`${styles.FooterContactItem}`}>
-              <Github height={25} width={25}/>
-              <a href="https://github.com/floooptimism" rel="noopener noreferrer" target="_blank">@floooptimism</a>
-    
-            </div>
-
-            <div className={`${styles.FooterContactItem}`}>
               <svg width="24" height="23" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.25 0H1.58333C0.7125 0 0.00791666 0.7125 0.00791666 1.58333L0 11.0833C0 11.9542 0.7125 12.6667 1.58333 12.6667H14.25C15.1208 12.6667 15.8333 11.9542 15.8333 11.0833V1.58333C15.8333 0.7125 15.1208 0 14.25 0ZM14.25 3.16667L7.91667 7.125L1.58333 3.16667V1.58333L7.91667 5.54167L14.25 1.58333V3.16667Z" fill="#CECECE"/>
               </svg>
@@ -86,7 +80,7 @@ function Index() {
 
       </footer>
 
-      <ReactTooltip effect="solid" clickable/>
+      <ReactTooltip clickable/>
     </div>
   );
 }
