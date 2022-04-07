@@ -9,7 +9,16 @@
   },
   "dependencies": {
     "gatsby": "^4.5.3",
+    "hamburger-react": "^2.5.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-tooltip": "^4.2.21"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "gatsby-plugin-postcss": "^5.11.0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
   }
 }
