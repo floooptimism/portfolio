@@ -1,6 +1,6 @@
 
 .Container {
-  @apply pb-40 md:pb-48;
+  @apply pb-32 md:pb-40;
   @apply relative;
   @apply min-h-screen;
   @apply overflow-y-auto;
@@ -43,7 +43,7 @@
 
 
 .Footer {
-  @apply bottom-0 absolute h-28;
+  @apply bottom-0 absolute h-20;
   @apply w-full;
   @apply flex flex-col items-center;
 }
