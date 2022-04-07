@@ -1,0 +1,35 @@
+.NavContainer {
+  @apply fixed w-screen;
+  @apply transition-all duration-200;
+}
+
+.NavContainerClose {
+  @apply -top-36 md:top-0;
+}
+
+.NavContainerOpen {
+  @apply top-0;
+}
+
+
+
+.NavBar {
+  @apply h-36 md:h-16;
+  @apply flex flex-col md:flex-row justify-center items-center md:space-x-6;
+  background-color: var(--lift-color);
+}
+
+.NavItem {
+  @apply text-xl md:text-lg text-white;
+  @apply p-2;
+}
+
+.NavActive {
+  color: var(--secondary-color);
+}
+
+
+.NavToggleButton {
+  @apply h-12 flex md:hidden items-center justify-center text-white;
+  background-color: #3B3E4A;
+}
