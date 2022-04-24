@@ -1,0 +1,84 @@
+.ProjectCard {
+    background-color: #3A3C45;
+    @apply flex flex-col;
+    min-width: 310px;
+    max-width: 310px;
+    @apply shadow-lg;
+    @apply transition-transform duration-150 ease-in;
+    @apply hover:-translate-y-2;
+}
+
+.ProjectCardInfoContainer {
+    @apply flex flex-col px-4 py-4;
+    @apply text-white;
+}
+
+.ProjectCardName {
+    @apply text-xl;
+    @apply mb-6;
+    color: var(--secondary-color);
+}
+
+.ProjectCardDescription {
+    @apply text-sm;
+    @apply font-light;
+    @apply mb-8;
+    color: #E9E9E9;
+}
+
+.ProjectCardTagsContainer {
+    @apply flex space-x-4;
+    @apply mb-4;
+}
+
+.ProjectCardTag {
+    @apply cursor-default;
+    background-color: #51535C;
+    color: #9E9E9E;
+    @apply px-1 py-1 text-xs;
+    @apply rounded-md;
+}
+
+.ProjectCardDemoLinkContainer a button {
+    @apply flex items-center justify-center;
+}
+
+.ProjectCardDemoLinkContainer a button span{
+    @apply border-b;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    @apply text-sm;
+    @apply transition-all ease-in duration-200;
+}
+
+.ProjectCardDemoLinkContainer a button:hover span {
+    @apply translate-x-2;
+}
+
+.ProjectCardDemoLinkContainer a button:hover .DemoArrow{
+    @apply translate-x-4;
+    @apply opacity-100;
+
+}
+
+.DemoArrow{
+    @apply transition-all ease-in duration-200;
+    @apply opacity-0;
+}
+
+.DemoArrow path{
+    fill: var(--secondary-color);
+}
+
+@keyframes getAttention{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
