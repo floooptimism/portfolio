@@ -1,23 +1,31 @@
 import React, { useState } from 'react';
 import * as styles from './NavBar.module.css';
 import { Squash as Hamburger } from 'hamburger-react'
+import { Link } from 'gatsby';
 
-function NavBar(props){
+function NavBar({isHomepage, isProjectspage}){
   const [isOpen, setIsOpen] = useState(false);
   
   function toggle(){
     setIsOpen(!isOpen);
   }
 
+
+
   return (
     <div className={`${styles.NavContainer} ${isOpen ? styles.NavContainerOpen:styles.NavContainerClose}`}>
       <nav className={`${styles.NavBar}`}>
-        <div className={`${styles.NavItem} ${styles.NavActive}`}>
-          Home  
-        </div>
-        <div className={`${styles.NavItem}`}>
-          Projects
-        </div>
+        <Link to="/" activeClassName={`${styles.NavActive}`} onClick={toggle}>
+          <div className={`${styles.NavItem}`}>
+            Home  
+          </div>
+        </Link> 
+
+        <Link to="/projects" activeClassName={`${styles.NavActive}`} onClick={toggle}>
+          <div className={`${styles.NavItem}`}>
+            Projects
+          </div>
+        </Link>
 
       </nav>
       

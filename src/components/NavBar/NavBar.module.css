@@ -1,6 +1,7 @@
 .NavContainer {
   @apply fixed w-screen;
   @apply transition-all duration-200;
+  @apply z-50;
 }
 
 .NavContainerClose {
@@ -16,12 +17,15 @@
 .NavBar {
   @apply h-36 md:h-16;
   @apply flex flex-col md:flex-row justify-center items-center md:space-x-6;
+  @apply text-white;
   background-color: var(--lift-color);
 }
 
 .NavItem {
-  @apply text-xl md:text-lg text-white;
+  @apply text-xl md:text-lg;
   @apply p-2;
+  @apply text-inherit;
+  @apply transition-all duration-150 ease-in;
 }
 
 .NavActive {
