@@ -1,0 +1,4 @@
+.header {
+    @apply text-4xl text-white border-b-2 pb-2 font-medium;
+    border-color: var(--secondary-color);
+}
