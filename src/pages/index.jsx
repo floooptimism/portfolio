@@ -4,7 +4,6 @@ import React from 'react';
 import '../styles/index.css';
 import * as styles from './index.module.css';
 import ArrowRight from '../components/Icons/ArrowRight/ArrowRight';
-import {Helmet} from 'react-helmet';
 
 
 // Icons
@@ -18,7 +17,6 @@ import ReactIcon from '../components/Icons/React/React.jsx';
 
 
 import ReactTooltip from 'react-tooltip';
-import Layout from '../components/Layout/Layout';
 import { Link } from 'gatsby';
 
 function Index() {
@@ -37,7 +35,7 @@ function Index() {
                 <span>
                   See my projects
                 </span>
-                <ArrowRight />
+                <ArrowRight className={`${styles.ButtonArrow}`}/>
                 
               </button>
             </Link>
