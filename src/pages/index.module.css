@@ -17,11 +17,27 @@
   @apply pt-8
 }
 
+.ButtonArrow{
+  @apply transition-transform ease-in duration-200;
+}
+
+.HeroButtonContainer button:hover .ButtonArrow{
+  @apply translate-x-1;
+}
+
 .HeroButtonContainer button {
+  @apply transition-shadow ease-in duration-200;
   @apply flex justify-center items-center space-x-2;
   @apply px-3 py-1 rounded;
   @apply text-lg text-black;
   background-color: var(--secondary-color);
+  @apply hover:shadow-2xl;
+}
+
+.HeroButtonContainer button:hover{
+  -webkit-box-shadow:0px 0px 17px 0px rgba(213,163,24,0.47);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(213,163,24,0.47);
+  box-shadow: 0px 0px 17px 0px rgba(213,163,24,0.47);
 }
 
 .SectionContainer{
