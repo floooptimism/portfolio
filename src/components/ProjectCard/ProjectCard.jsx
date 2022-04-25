@@ -1,14 +1,13 @@
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 import * as styles from './ProjectCard.module.css';
 import ArrowRight from '../Icons/ArrowRight/ArrowRight';
 
 function ProjectCard({projectImage, projectName, projectDescription, projectDemoLink, projectTags}){
-    const image = getImage(projectImage);
     return (
         <div className={styles.ProjectCard}>
             <div className={``}>
-                <GatsbyImage image={image} alt={projectName} />
+                <GatsbyImage image={projectImage.gatsbyImage} alt={projectName} />
             </div>
             <div className={styles.ProjectCardInfoContainer}>
                 <h3 className={styles.ProjectCardName}>{projectName}</h3>
