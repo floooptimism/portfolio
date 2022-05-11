@@ -11,6 +11,8 @@
 .ProjectCardInfoContainer {
     @apply flex flex-col px-4 py-4;
     @apply text-white;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 .ProjectCardName {
