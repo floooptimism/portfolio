@@ -25,7 +25,7 @@ function Index() {
       <div className={`${styles.Container}`}>
 
         <div className={`${styles.Hero}`}>
-          <h1 className="text-4xl font-bold tracking-wide">DUKE LYNDELL</h1>
+          <h1 className="text-4xl font-bold tracking-wide">MANOUSH RAHMAN</h1>
           <h4 className="text-lg italic tracking-wider font-light text-gray-200">Full Steak Developer</h4>
           <h6 className=" italic text-gray-400 tracking-wider">Based on Mars</h6>
 
